@@ -39,8 +39,8 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Vagrant &amp; Packer</h1>
+				<section data-background="images/Slide_first.png">
+					<h1>Vagrant pour les développeurs</h1>
 					<p>Alexis Seigneurin</p>
 					<p><a href="https://twitter.com/ASeigneurin">@aseigneurin</a></p>
 					<p>&nbsp;</p>
@@ -377,8 +377,11 @@ end
 				<section>
 					<h1>Questions ?</h1>
 					<p><a href="https://twitter.com/ASeigneurin">@aseigneurin</a></p>
-					<p>Code : <a href="https://github.com/aseigneurin/pres-vagrant">github.com/aseigneurin/pres-vagrant</a></p>
-					<p>Slides : <a href="http://aseigneurin.github.io/pres-vagrant">aseigneurin.github.io/pres-vagrant</a></p>
+					<p>Code : <a href="https://github.com/aseigneurin/pres-vagrant">github.com/aseigneurin/pres-vagrant-breizhcamp</a></p>
+					<p>Slides : <a href="http://aseigneurin.github.io/pres-vagrant">aseigneurin.github.io/pres-vagrant-breizhcamp</a></p>
+				</section>
+
+				<section data-background="images/Slide_last.png">
 				</section>
 
 			</div>
@@ -398,7 +401,7 @@ end
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				theme: Reveal.getQueryHash().theme || 'simple', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Parallax scrolling

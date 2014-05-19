@@ -16,7 +16,7 @@ body {
 
 .reveal {
   font-family: "Lato", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: black; }
@@ -37,11 +37,19 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
+  font-family: "League Gothic", Impact, sans-serif;
+  line-height: 1.0em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
+  /*
+  margin: 0 0 20px 0;
+  color: black;
   font-family: "News Cycle", Impact, sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
-  text-shadow: none; }
+  text-shadow: none;*/ }
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); }
