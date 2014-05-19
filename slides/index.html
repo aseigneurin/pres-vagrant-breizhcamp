@@ -41,8 +41,8 @@
 			<div class="slides">
 				<section data-background="images/Slide_first.png">
 					<h1>Vagrant pour les développeurs</h1>
-					<p>Alexis Seigneurin</p>
-					<p><a href="https://twitter.com/ASeigneurin">@aseigneurin</a></p>
+					<p>Alexis Seigneurin - <a href="https://twitter.com/ASeigneurin">@aseigneurin</a></p>
+					<p>Ippon Technologies - <a href="https://twitter.com/ippontech">@ippontech</a></p>
 					<p>&nbsp;</p>
 					<p style="font-size: 0.6em">(Flèches droite/gauche et haut/bas pour naviguer, ESC pour tout afficher)</p>
 				</section>
@@ -54,7 +54,6 @@
 						<li class="fragment">Création d'une VM simple</li>
 						<li class="fragment">Reconstitution d'une infra</li>
 						<li class="fragment">Repackaging de boxes</li>
-						<li class="fragment">Base boxes from scratch (Packer)</li>
 					</ul>
 				</section>
 
@@ -64,7 +63,7 @@
 					</section>
 					<section>
 						<h2>Vagrant</h2>
-						<p>Orchestration de machines virtuelles</p>
+						<p>Orchestration de machines virtuelles Linux</p>
 						<p>VMs redistribuables : Vagrantfile + base box</p>
 						<p>Plutôt orienté développeur</p>
 					</section>
@@ -206,6 +205,7 @@ end
 						<ul>
 							<li>$ vagrant up back-end-1</li>
 							<li class="fragment">$ curl localhost:8011</li>
+							<li class="fragment">$ vagrant status</li>
 						</ul>
 					</section>
 					<section>
@@ -230,7 +230,6 @@ end
 						<p>3 VMs = 3 provisioning</p>
 						<p class="fragment">3 x apt-get update</p>
 						<p class="fragment">2 x installation Apache</p>
-						<p class="fragment">apt-get install openjdk-7-jdk = 86 MB</p>
 					</section>
 				</section>
 
@@ -291,59 +290,6 @@ end
 						<h2>Mais...</h2>
 						<p>Pas automatisé</p>
 						<p class="fragment">Pas de contrôle sur la box d'origine</p>
-					</section>
-				</section>
-
-				<section>
-					<section>
-						<h1>Base boxes from scratch</h1>
-					</section>
-					<section>
-						<h2>Principe</h2>
-						<p>Création d'une VM depuis une ISO</p>
-						<p class="fragment">Fichier de preseed</p>
-						<p class="fragment">Adaptation : user vagrant...</p>
-						<p class="fragment">Packaging</p>
-					</section>
-					<section>
-						<h2>Veewee</h2>
-						<ul>
-							<li>VirtualBox (OVF)</li>
-							<li>VMware (OVA)</li>
-							<li>KVM (IMG)</li>
-							<li>Parallels</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Packer</h2>
-						<ul>
-							<li>Amazon EC2 (AMI)</li>
-							<li>Google Compute Engine</li>
-							<li>OpenStack</li>
-							<li>...</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Packer : template.json</h2>
-						<ul>
-							<li>Builders</li>
-							<li>Provisioners</li>
-							<li>Post-processors</li>
-						</ul>
-					</section>
-					<section>
-						<h2>Exemple</h2>
-						<p>$ packer build template.json</p>
-						<p><img src="images/packer.png"></p>
-					</section>
-					<section>
-						<h2>Recap</h2>
-						<p>Configuration sur mesure</p>
-						<p class="fragment">Pas que Vagrant / VirtualBox</p>
-					</section>
-					<section>
-						<h2>Mais...</h2>
-						<p>Complexe (preseeding)</p>
 					</section>
 				</section>
 
